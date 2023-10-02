@@ -25,5 +25,4 @@ public class UserDTO {
 
     private String pwd;                //'비밀번호'
 
-
 }

@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 페이지 로드 시 초기 데이터를 가져와서 선택 상자를 생성
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "http://localhost/initialData", true);
+    xhr.open("GET", "/initialData", true);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
     xhr.onload = function () {
@@ -90,7 +90,11 @@ document.addEventListener("DOMContentLoaded", function () {
             formData.append("hotplace_cate_no", selectedCategory);
 
             var xhr = new XMLHttpRequest();
+<<<<<<< HEAD
             xhr.open("POST", "http://localhost/main", true);
+=======
+            xhr.open("POST", "/main", true);
+>>>>>>> origin/user2
             xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
 
             xhr.onload = function () {
@@ -197,7 +201,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
                                // 모달창 생성
                               var modal = document.createElement('div');
+<<<<<<< HEAD
                               modal.id = 'myModal';
+=======
+                              modal.id = 'myModal'+ (i + 1);  // 각각 다른 ID 부여
+>>>>>>> origin/user2
                               modal.className = 'modal fade';
                               modal.tabIndex = '-1';
 
@@ -250,8 +258,13 @@ document.addEventListener("DOMContentLoaded", function () {
                               footer.appendChild(closeModalButton);
                               content.appendChild(footer);
 
+<<<<<<< HEAD
                                document.querySelectorAll('.heading').forEach(function (element) { //제목 클릭시
                                    element.addEventListener("click", function () {
+=======
+                               nameH6.addEventListener("click", (function(i) {
+                                   return function () {
+>>>>>>> origin/user2
                                        var hotplace_no = this.getAttribute('data-hotplace-no'); // hotplace_no정보 받음.
                                        var url = '/review/' + hotplace_no;
 
@@ -260,6 +273,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                        xhr.setRequestHeader('Content-Type', 'application/json');
 
                                        xhr.onreadystatechange = function () {
+<<<<<<< HEAD
                                            if (xhr.readyState === 4) {
                                                if (xhr.status === 200) {
                                                    var data = JSON.parse(xhr.responseText);
@@ -302,6 +316,49 @@ document.addEventListener("DOMContentLoaded", function () {
                                    });
                                });
 
+=======
+                                           if (xhr.readyState === 4 && xhr.status === 200) {
+                                               var data = JSON.parse(xhr.responseText);
+
+                                               console.log(data);
+
+                                               // AJAX 요청이 성공적으로 완료된 후에만 모달 창 열기
+                                               let reviewModalElmId='myModal'+(i+1);
+                                               let reviewModalElm=document.getElementById(reviewModalElmId);
+
+                                               if (reviewModalElm != null) {
+                                                   let modalBody = reviewModalElm.querySelector('.modal-body');
+                                                   modalBody.innerHTML = '';
+
+                                                   data.forEach(function(reviewList) {
+                                                       let reviewBody = document.createElement('div');
+                                                       reviewBody.classList.add('modalReviewCard', 'my-2');
+                                                       let reviewTextElement = document.createElement('p');
+                                                       reviewTextElement.textContent = reviewList.review;
+
+                                                       let emoResultElement = document.createElement('p');
+                                                       emoResultElement.style.textAlign='right';
+                                                       emoResultElement.textContent='리뷰 온도 '+reviewList.emo_result+'°C';
+                                                       emoResultElement.classList.add('text1');
+
+                                                       reviewBody.appendChild(reviewTextElement);
+                                                       reviewBody.appendChild(emoResultElement);
+
+                                                      modalBody.appendChild(reviewBody);
+                                                   });
+
+                                                  var modalInstance=new bootstrap.Modal(reviewModalElm);
+                                                  modalInstance.show();
+                                              }
+                                           } else if (xhr.readyState === 4) {
+                                              alert('요청 실패: ' + xhr.status);
+                                           }
+                                      };
+
+                                      xhr.send();
+                                  };
+                               })(i)); // IIFE 종료
+>>>>>>> origin/user2
                             }
                         }
                     } catch (error) {
@@ -320,5 +377,9 @@ document.addEventListener("DOMContentLoaded", function () {
             xhr.send("sido=" + selectedSido + "&gugun=" + selectedGugun + "&hotplace_cate_no=" + selectedCategory); //매개변수를 전달
         }
     });
+<<<<<<< HEAD
 });
 
+=======
+});
+>>>>>>> origin/user2
