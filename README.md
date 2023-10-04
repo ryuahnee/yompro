@@ -17,5 +17,5 @@
 * 사용 기술: Java, Spring Boot
 
 ---
-#### [커밋히스토리 보러가기](https://github.com/ryuahnee/yompro/commits/user2)
+#### ‣ [커밋히스토리 보러가기](https://github.com/ryuahnee/yompro/commits/user2)
 
