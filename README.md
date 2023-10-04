@@ -14,7 +14,7 @@
 
 * 주요 기능: 로그인/회원가입, Spring Security, Email 전송, 배포 및 커스텀 도메인 연결
 
-* 사용 기술: Java, Spring Boot
+* 사용 기술: Java(JDK 17), Spring Boot, Javascrip, JPA, Ajax, HTML5/CSS
 
 ---
 #### ‣ [커밋히스토리 보러가기](https://github.com/ryuahnee/yompro/commits/user2)
