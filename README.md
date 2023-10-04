@@ -5,10 +5,10 @@
 
 제작 기간: 2023.08 ~ 09.
 
-인원 : 5명 
+인원 : 5명 (팀장)
 
 분류: 팀 프로젝트
 
-주요 기능: 라이트/다크 모드, 반응형 웹, Hash Link, Email 전송, 배포 및 커스텀 도메인 연결, open graph
+주요 기능: 로그인/회원가입, Spring Security, Email 전송, 배포 및 커스텀 도메인 연결
 
 사용 기술: Java, Spring Boot
