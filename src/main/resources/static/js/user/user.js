@@ -12,14 +12,11 @@ emailInput.addEventListener('keydown', function (event) {
 });
 
 function openModal() {
-    console.log("1");
     myModal.show();
     loadText();
-    console.log("2-1");
 }
 
 function loadText() {
-    console.log("2");
     var emailValue = emailInput.value;
     var xhr = new XMLHttpRequest();
     xhr.open('POST', '/user/searchid', true);
