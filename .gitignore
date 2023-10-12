@@ -25,6 +25,7 @@ bin/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+
 application-aws.properties
 
 ### NetBeans ###
@@ -36,3 +37,4 @@ application-aws.properties
 
 ### VS Code ###
 .vscode/
+/src/main/resources/application-aws.properties.properties
