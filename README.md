@@ -24,7 +24,8 @@
 
 * 분류: 팀 프로젝트
 
-* 주요 기능: Spring Security, 로그인/회원가입, Email-API, 에러페이지처리, AWS EC2 배포 및 커스텀 도메인 연결
+* 주요 기능:
+  >> Spring Security, 로그인/회원가입, Email-API, 에러페이지처리, AWS EC2 배포 및 커스텀 도메인 연결
 
 * 사용 기술: Java(JDK 17), Spring Boot, Javascrip, JPA, Ajax, HTML5/CSS
 
