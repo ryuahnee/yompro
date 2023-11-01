@@ -14,7 +14,7 @@
 <br/><br/>
 ---
 
-[🌐](https://yomprogo.com)
+[🌐 또 갈지도 홈페이지 바로가기](https://yomprogo.com)
 ---
 
 ### 🗓️ 프로젝트 상세
