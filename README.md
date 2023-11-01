@@ -1,4 +1,8 @@
 # Spring Boot Project - '또갈지도'
+ <div align="center">
+   <img width="40%" src="https://github.com/ryuahnee/yompro/assets/135402890/75dc3c87-ed85-41c5-b323-7463f8d168a3"/>
+</div>
+<br/><br/>
 ### 🖥️ 프로젝트 설명
 ## 나만의 맛집지도! '또 갈 지도?'  - 감정분석AI를 기반으로 한 맛집지도 웹 사이트 
  **‘또 갈지도’** 는 다른 사람에게는 알려주지 않고 나만 알고 싶은 맛집, 내가 남긴 리뷰만으로 구성된 나만의 맛집 지도 서비스 입니다. <br/>
@@ -7,11 +11,9 @@
 
 ---
 
- <div align="center">
-   <img width="40%" src="https://github.com/ryuahnee/yompro/assets/135402890/75dc3c87-ed85-41c5-b323-7463f8d168a3"/>
-</div>
 
-<br/><br/>
+
+
 
 
 ---
