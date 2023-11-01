@@ -3,7 +3,8 @@
    <img width="40%" src="https://github.com/ryuahnee/yompro/assets/135402890/75dc3c87-ed85-41c5-b323-7463f8d168a3"/>
 </div>
 
-[🌐 또 갈지도 홈페이지 바로가기](https://yomprogo.com)<br/>
+
+*🌐 또 갈지도 홈페이지 바로가기 : https://yomprogo.com <br>
 * ID: test / PW: 1234
 
 <br>
