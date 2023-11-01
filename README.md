@@ -35,6 +35,7 @@
 ---
 
 ## 신경쓴 코드
+* 스프링시큐리티 권한별 접근 설정
 <pre><code>
 @Configuration
 @EnableWebSecurity
