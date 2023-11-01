@@ -2,7 +2,11 @@
  <div align="center">
    <img width="40%" src="https://github.com/ryuahnee/yompro/assets/135402890/75dc3c87-ed85-41c5-b323-7463f8d168a3"/>
 </div>
-<br/><br/>
+
+[🌐 또 갈지도 홈페이지 바로가기](https://yomprogo.com)<br/>
+> ID: test / PW: 1234
+---
+
 ### 🖥️ 프로젝트 설명
 ## 나만의 맛집지도! '또 갈 지도?'  - 감정분석AI를 기반으로 한 맛집지도 웹 사이트 
  **‘또 갈지도’** 는 다른 사람에게는 알려주지 않고 나만 알고 싶은 맛집, 내가 남긴 리뷰만으로 구성된 나만의 맛집 지도 서비스 입니다. <br/>
@@ -31,8 +35,7 @@
 * 사용 기술 : Java(JDK 17), Spring Boot, Javascrip, JPA, Ajax, HTML5/CSS
 
 ---
-[🌐 또 갈지도 홈페이지 바로가기](https://yomprogo.com)<br/>
-> ID: test / PW: 1234
+
 #### ‣ [커밋히스토리 보러가기](https://github.com/ryuahnee/yompro/commits/user2)
 
 ---
