@@ -12,7 +12,6 @@
 </div>
 
 <br/><br/>
----
 
 [🌐 또 갈지도 홈페이지 바로가기](https://yomprogo.com)
 ---
