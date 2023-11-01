@@ -54,7 +54,6 @@ SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
                 .anyRequest().permitAll()
                 .and().formLogin().loginPage("/user/login").usernameParameter("user_id").passwordParameter("pwd").defaultSuccessUrl("/")
                 .and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/user/logout")).logoutSuccessUrl("/").invalidateHttpSession(true);
-
         return http.build();
     }
 }
