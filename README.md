@@ -36,10 +36,33 @@
 
 ## 신경쓴 코드
 <pre><code>
- @Configuration
+@Configuration
 @EnableWebSecurity
-@EnableMethodSecurity(prePostEnabled = true)//@PreAuthorize("isAuthenticated()")//로그인인증가 동작할 수 있기 위함
+@EnableMethodSecurity(prePostEnabled = true)
 public class SecurityConfig {
+
+  @Bean
+    SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        http.
+                csrf().disable() 
+                .authorizeHttpRequests()
+                .and()
+                .sessionManagement()
+                .maximumSessions(1) //최대 세션 허용 수
+                .maxSessionsPreventsLogin(false)    // 2중 로그인 방지 -> 먼저로그인한 user가 튕긴다.
+                .expiredUrl("/user/login");         // 튕겨지면 user/login페이지로 이동
+        http.authorizeHttpRequests()
+                .requestMatchers(new AntPathRequestMatcher("/user/modifyForm/**")).authenticated()
+                .requestMatchers(new AntPathRequestMatcher("/mymap/**")).authenticated()
+                .requestMatchers(new AntPathRequestMatcher("/admin/**")).hasRole("ADMIN")
+                .requestMatchers(new AntPathRequestMatcher("/user/joinForm")).denyAll() //로그인 후 회원가입접근불가
+                .anyRequest().permitAll()
+                .and().formLogin().loginPage("/user/login").usernameParameter("user_id").passwordParameter("pwd").defaultSuccessUrl("/")
+                .and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/user/logout")).logoutSuccessUrl("/").invalidateHttpSession(true);
+
+        return http.build();
+    }
+}
 </code></pre>
 
 
