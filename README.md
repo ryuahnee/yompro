@@ -1,7 +1,7 @@
 # 감정분석AI를 기반으로 한 나만의 맛집지도 웹 사이트! '또 갈 지도' 
 
  <div align="center">
-<img width="336" alt="또갈지도 메인" src="https://github.com/ryuahnee/yompro/assets/135402890/db1e3e10-239e-4b4a-b13e-fe1bbd5f4afb">
+<img width="1440" alt="스크린샷 2023-11-02 오전 3 26 17" src="https://github.com/ryuahnee/yompro/assets/135402890/2f49a241-60ad-4f23-82c8-3b4ce76e7dd6">
 </div>
 
 <br>
