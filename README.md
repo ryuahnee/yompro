@@ -27,7 +27,7 @@
 
 * 분류 : Spring Boot 기반 팀 프로젝트
 
-* 언어 : Java(JDK 17), Spring Boot, Javascrip, JPA, Ajax, HTML5/CSS
+* 언어 : Java(JDK 17), Spring Boot, Javascrip, JPA, Ajax, HTML5/CSS3
 * 서버 : Apache Tomcat 9.0, AWS EC2
 * DB : MySQL 8.0 (RDS)
 * API & library : Spring Security, KaKao Maps API, CLOVA Sentiment API, Scheduler API, Mail API, Thymeleaf
