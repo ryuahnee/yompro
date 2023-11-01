@@ -58,7 +58,16 @@
         return http.build();
     }
 </code></pre>
+<pre><code>
+ // 현재 사용자의 인증 정보를 가져옴
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
+        // 현재 사용자의 권한 중 하나라도 "ROLE_ADMIN"이 아니라면
+        if (!authentication.getAuthorities().stream()
+                .anyMatch(authority -> authority.getAuthority().equals("ROLE_ADMIN"))) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST,"권한이 없습니다.");
+        }
+</code></pre>
 
 #### ‣ [커밋히스토리 보러가기](https://github.com/ryuahnee/yompro/commits/user2)
 
