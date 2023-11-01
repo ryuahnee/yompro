@@ -1,4 +1,5 @@
-# 나만의 맛집지도! '또 갈 지도?' > 감정분석AI를 기반으로 한 맛집지도 웹 사이트 
+# 나만의 맛집지도! '또 갈 지도?'
+> 감정분석AI를 기반으로 한 맛집지도 웹 사이트 
  <div align="center">
    <img width="40%" src="https://github.com/ryuahnee/yompro/assets/135402890/75dc3c87-ed85-41c5-b323-7463f8d168a3"/>
 </div>
