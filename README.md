@@ -17,5 +17,7 @@
 * 사용 기술: Java(JDK 17), Spring Boot, Javascrip, JPA, Ajax, HTML5/CSS
 
 ---
+<img width="80%" src="https://github.com/ryuahnee/yompro/assets/135402890/75dc3c87-ed85-41c5-b323-7463f8d168a3"/>
+---
 #### ‣ [커밋히스토리 보러가기](https://github.com/ryuahnee/yompro/commits/user2)
 
