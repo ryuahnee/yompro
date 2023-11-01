@@ -37,6 +37,7 @@
 ## 신경쓴 코드
 * 스프링시큐리티 권한별 접근 설정 (class SecurityConfig)
 <code><pre>
+
 @Bean
     SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.
@@ -55,7 +56,6 @@
                 .anyRequest().permitAll()
                 .and().formLogin().loginPage("/user/login").usernameParameter("user_id").passwordParameter("pwd").defaultSuccessUrl("/")
                 .and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/user/logout")).logoutSuccessUrl("/").invalidateHttpSession(true);
-
         return http.build();
     }
 </code></pre>
