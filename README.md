@@ -13,7 +13,7 @@
 
 <br/><br/>
 
-[🌐 또 갈지도 홈페이지 바로가기](https://yomprogo.com)
+
 ---
 
 ### 🗓️ 프로젝트 상세
@@ -29,5 +29,6 @@
 * 사용 기술: Java(JDK 17), Spring Boot, Javascrip, JPA, Ajax, HTML5/CSS
 
 ---
+[🌐 또 갈지도 홈페이지 바로가기](https://yomprogo.com)<br/>
 #### ‣ [커밋히스토리 보러가기](https://github.com/ryuahnee/yompro/commits/user2)
 
