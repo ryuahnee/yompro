@@ -36,17 +36,16 @@
 
 ## 신경쓴 코드
 * 스프링시큐리티 권한별 접근 설정 (class SecurityConfig)
-<pre><code>
-@Bean
+<pre><code>@Bean
     SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.
-                csrf().disable() // CSRF 비활성화
+                csrf().disable()
                 .authorizeHttpRequests()
                 .and()
                 .sessionManagement()
-                .maximumSessions(1) //최대 세션 허용 수
-                .maxSessionsPreventsLogin(false)    // 2중 로그인 방지 -> 먼저로그인한 user가 튕긴다.
-                .expiredUrl("/user/login");         // 튕겨지면 user/login페이지로 이동
+                .maximumSessions(1) 
+                .maxSessionsPreventsLogin(false)    // 2중 로그인 방지
+                .expiredUrl("/user/login"); 
         http.authorizeHttpRequests()
                 .requestMatchers(new AntPathRequestMatcher("/user/modifyForm/**")).authenticated()
                 .requestMatchers(new AntPathRequestMatcher("/mymap/**")).authenticated()
