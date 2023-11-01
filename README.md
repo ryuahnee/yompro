@@ -35,7 +35,12 @@
 ---
 
 ## 신경쓴 코드
-    aaaaa''aa
+<pre><code>
+ @Configuration
+@EnableWebSecurity
+@EnableMethodSecurity(prePostEnabled = true)//@PreAuthorize("isAuthenticated()")//로그인인증가 동작할 수 있기 위함
+public class SecurityConfig {
+</code></pre>
 
 
 #### ‣ [커밋히스토리 보러가기](https://github.com/ryuahnee/yompro/commits/user2)
