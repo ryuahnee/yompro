@@ -28,10 +28,12 @@
 
 * 분류 : Spring Boot 기반 팀 프로젝트
 
+* 언어 : Java(JDK 17), Spring Boot, Javascrip, JPA, Ajax, HTML5/CSS
+* 서버 : Apache Tomcat 9.0, AWS EC2
+* DB : MySQL 8.0 (RDS)
+* API & library : Spring Security, KaKao Maps API, CLOVA Sentiment API, Scheduler API, Mail API, Thymeleaf 
+
 * 주요 역할 : Spring Security, 로그인/회원가입, Email-API, 에러페이지처리, AWS EC2 배포 및 커스텀 도메인 연결
-
-* 사용 기술 : Java(JDK 17), Spring Boot, Javascrip, JPA, Ajax, HTML5/CSS
-
 ---
 
 ## ❕신경쓴 코드
