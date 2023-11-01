@@ -30,7 +30,9 @@
 * 언어 : Java(JDK 17), Spring Boot, Javascrip, JPA, Ajax, HTML5/CSS
 * 서버 : Apache Tomcat 9.0, AWS EC2
 * DB : MySQL 8.0 (RDS)
-* API & library : Spring Security, KaKao Maps API, CLOVA Sentiment API, Scheduler API, Mail API, Thymeleaf 
+* API & library : Spring Security, KaKao Maps API, CLOVA Sentiment API, Scheduler API, Mail API, Thymeleaf
+
+<br>
 
 ## 💡 주요 역할 
 - Spring Security (로그인/회원가입 구현 & 권한별 접근 처리)
