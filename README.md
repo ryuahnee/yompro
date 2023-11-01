@@ -19,7 +19,6 @@
 
 <br>
 
-
 ## 🗓️ 프로젝트 상세
 
 * 기간 : 2023.08.17 ~ 09.11
@@ -33,8 +32,11 @@
 * DB : MySQL 8.0 (RDS)
 * API & library : Spring Security, KaKao Maps API, CLOVA Sentiment API, Scheduler API, Mail API, Thymeleaf 
 
-## 주요 역할 : 
-Spring Security, 로그인/회원가입, Email-API, 에러페이지처리, AWS EC2 배포 및 커스텀 도메인 연결
+## 💡 주요 역할 
+- Spring Security (로그인/회원가입 구현 & 권한별 접근 처리)
+- AWS EC2 배포 및 커스텀 도메인 연결
+- 에러페이지처리
+
 ---
 
 ## ❕신경쓴 코드
