@@ -8,7 +8,7 @@
 ---
 
  <div align="center">
-   <img width="50%" src="https://github.com/ryuahnee/yompro/assets/135402890/75dc3c87-ed85-41c5-b323-7463f8d168a3"/>
+   <img width="100%" src="https://github.com/ryuahnee/yompro/assets/135402890/75dc3c87-ed85-41c5-b323-7463f8d168a3"/>
 </div>
 
 <br/><br/>
