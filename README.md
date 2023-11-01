@@ -58,6 +58,7 @@
         return http.build();
     }
 </code></pre>
+* admin page 접근 설정
 <pre><code>// 현재 사용자의 인증 정보를 가져옴
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
