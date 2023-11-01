@@ -15,7 +15,7 @@
 
 ---
 
-### 🗓️ 프로젝트 기간 
+### 🗓️ 프로젝트 상세
 
 * 기간: 2023.08.17 ~ 09.11
 
@@ -23,13 +23,9 @@
 
 * 분류: 팀 프로젝트
 
-* 주요 기능: 로그인/회원가입, Spring Security, Email 전송, 에러페이지처리, 배포 및 커스텀 도메인 연결
+* 주요 기능: Spring Security, 로그인/회원가입, Email-API, 에러페이지처리, AWS EC2 배포 및 커스텀 도메인 연결
 
 * 사용 기술: Java(JDK 17), Spring Boot, Javascrip, JPA, Ajax, HTML5/CSS
-
----
-프로젝트 설명
-
 
 ---
 #### ‣ [커밋히스토리 보러가기](https://github.com/ryuahnee/yompro/commits/user2)
