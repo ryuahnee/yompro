@@ -36,7 +36,8 @@
 
 ## 신경쓴 코드
 * 스프링시큐리티 권한별 접근 설정 (class SecurityConfig)
-<code><pre>SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+<code><pre>
+SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.
                 csrf().disable() 
                 .authorizeHttpRequests()
