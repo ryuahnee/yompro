@@ -22,11 +22,8 @@
 ## 🗓️ 프로젝트 상세
 
 * 기간 : 2023.08.17 ~ 09.11
-
 * 인원 : 5명 (기술팀장)
-
 * 분류 : Spring Boot 기반 팀 프로젝트
-
 * 언어 : Java(JDK 17), Spring Boot, Javascrip, JPA, Ajax, HTML5/CSS3
 * 서버 : Apache Tomcat 9.0, AWS EC2
 * DB : MySQL 8.0 (RDS)
