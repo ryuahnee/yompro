@@ -36,6 +36,17 @@
 - AWS EC2 배포 및 커스텀 도메인 연결
 - 에러페이지처리
 
+<br>
+
+## ✏️ ERD
+
+### ERD
+ <div align="center">
+
+<img src="https://github.com/ryuahnee/yompro/assets/135402890/3b5c9ed9-3161-4100-bb3a-46ca9a7063a5">
+</div>
+
+
 ---
 
 ## ❕신경쓴 코드
