@@ -159,11 +159,8 @@ public class QnaController {
         int notSolvedCnt=dashboardService.notSolvedCnt();
         //3.Model
         model.addAttribute("notSolvedCnt",notSolvedCnt);
-        return"redirect:qna/list";
+        return"redirect:/qna/list";
     }
-
-
-
 
 
     //문의글 상세 보기 (비밀번호 확인 / 관리자는 free)
@@ -185,7 +182,7 @@ public class QnaController {
                 .anyMatch(authority -> authority.getAuthority().equals("ROLE_ADMIN"))) {
             if(!qna.getQnaPwd().equals(inputPwd)){
                 redirectAttributes.addFlashAttribute("error", "문의글 상세보기는 비밀번호가 일치할 경우에만 가능합니다");
-                return "redirect:qna/list";
+                return "redirect:/qna/list";
             }
         }
 
@@ -496,7 +493,7 @@ public class QnaController {
 
         qnaService.qnaDelete(qna);
 
-        return "redirect:qna/list";
+        return "redirect:/qna/list";
     }
 
     @GetMapping("/error")

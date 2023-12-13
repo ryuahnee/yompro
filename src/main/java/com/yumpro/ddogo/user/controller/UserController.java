@@ -143,8 +143,6 @@ public class UserController {
     @PostMapping("/pwdsearch")
     @ResponseBody
     public Map<String, String> pwdsearch(@RequestParam("email") String email, @RequestParam("user_id") String user_id) {
-        System.out.println("email" + email);
-        System.out.println("user_id" + user_id);
         Map<String, String> message = new HashMap<>();
 
         // 이메일 중복 여부 체크

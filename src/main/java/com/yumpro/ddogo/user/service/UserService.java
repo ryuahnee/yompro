@@ -8,13 +8,13 @@ import com.yumpro.ddogo.user.validation.UserCreateForm;
 
 import com.yumpro.ddogo.user.validation.UserModifyForm;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.BeanUtils;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.Optional;
-
 @Service
 @RequiredArgsConstructor
 public class UserService {
@@ -22,11 +22,27 @@ public class UserService {
     private final UserRepository userRepository;
     private final PasswordEncoder PasswordEncoder;
 
+/*
+    @Transactional
+    public void userJoin(UserCreateForm userCreateForm) {
+        User user = new User();
+        System.out.println("?: "+userCreateForm.getUser_id());
+        BeanUtils.copyProperties(userCreateForm, user);
+
+        user.setJoinDate(LocalDateTime.now());
+        user.setPwd(PasswordEncoder.encode(userCreateForm.getPwd1()));
+        user.setRole(Role.USER);
+
+        userRepository.save(user);
+    }
+*/
+
+
+
     //회원가입처리
     public void userJoin(UserCreateForm userCreateForm){
         User user = new User();
 
-        System.out.println("userjoin서비스진입!");
         user.setUser_name(userCreateForm.getUser_name());
         user.setUserId(userCreateForm.getUser_id());
         user.setBirth(userCreateForm.getBirth());
@@ -50,7 +66,6 @@ public class UserService {
     // 회원 가입시 이메일 중복 여부 확인 or id 찾기에 사용
     @Transactional(readOnly = true)
     public boolean checkEmailDuplication(String email) {
-        System.out.println("서비스들어옴");
         boolean emailDuplicate = userRepository.existsByEmail(email);
         return emailDuplicate;
     }
@@ -67,7 +82,6 @@ public class UserService {
 
     //아이디 찾기
     public String searchId(String email) {
-        System.out.println("searchId서비스 hi");
         Optional<User> userOptional = userRepository.findByEmail(email);
         if (userOptional.isPresent()) {
             User user = userOptional.get();
@@ -79,11 +93,7 @@ public class UserService {
 
 //비밀번호찾기 - id && email값 동시에 일치하는 회원이 있는지
     public boolean pwdsearch(String user_id,String email){
-        System.out.println("pwdsearch 서비스옴!");
         Optional<User> byUserIdAndEmail = userRepository.findByUserIdAndEmail(user_id,email);
-        System.out.println("user_id: "+user_id);
-        System.out.println("email: "+email);
-        System.out.println("byUserIdAndEmail.isEmpty()?"+byUserIdAndEmail.isEmpty());
         if(byUserIdAndEmail.isEmpty()){   //값이 비어있다면
             return true;
         }else {

@@ -29,7 +29,6 @@ public class UserSecurityService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String user_id) throws UsernameNotFoundException {
-        System.out.println("시큐리티 로그인 진행 : UserSecurityService 진입");
         Optional<com.yumpro.ddogo.common.entity.User> user = userRepository.findByUserId(user_id);
 
         if (user.isEmpty()) {
@@ -46,7 +45,6 @@ public class UserSecurityService implements UserDetailsService {
             authorities.add(new SimpleGrantedAuthority(Role.USER.getValue()));
             return new User(user1.getUserId(), user1.getPwd(), new ArrayList<>());
         }
-        System.out.println("authorities:" +authorities);
         return new User(user1.getUserId(), user1.getPwd(), authorities);
     }
 }

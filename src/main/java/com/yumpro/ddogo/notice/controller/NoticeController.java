@@ -129,9 +129,9 @@ public class NoticeController {
         }
         Notice notice = noticeService.getNotice(notiNo);
         noticeService.modify(notice, noticeform);
-        System.out.println("수정 ㅇㅋ");
         return "redirect:notice/detail/" + notiNo; // 수정 후 공지사항 상세페이지로 리다이렉트
     }
+
     // 공지사항 삭제처리
     @GetMapping("/delete/{notiNo}")
     public String noticeDelete(@PathVariable("notiNo") Integer notiNo, Principal principal) {

@@ -29,13 +29,11 @@ function loadText() {
     xhr.onload = function () {
         console.log("3: ", this.status);
         if (this.status == 200) {
-            console.log("4");
             // JSON 응답 파싱
             var responseJson = JSON.parse(this.responseText);
 
             // user.userid 값을 가져와서 모달 내용에 출력
             var userid = responseJson.userid;
-            console.log("userid:", userid);
 
             // 결과를 모달 내용에 출력
             var modalText = '사용자 ID : ' + userid;
