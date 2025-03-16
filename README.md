@@ -8,8 +8,6 @@
 
 <br>
 
-* 홈페이지 바로가기 : https://yomprogo.com <br>
-* ID: test / PW: 1234
 ---
 
 ## 🖥️ 프로젝트 소개
